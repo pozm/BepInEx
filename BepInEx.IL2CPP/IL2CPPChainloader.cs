@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
@@ -28,8 +28,8 @@ public class IL2CPPChainloader : BaseChainloader<BasePlugin>
 
     private static readonly ConfigEntry<bool> ConfigUnityLogging = ConfigFile.CoreConfig.Bind(
      "Logging", "UnityLogListening",
-     true,
-     "Enables showing unity log messages in the BepInEx logging system.");
+     false,
+     "Enables showing unity log messages ein the BepInEx logging system.");
 
     private static readonly ConfigEntry<bool> ConfigDiskWriteUnityLog = ConfigFile.CoreConfig.Bind(
      "Logging.Disk", "WriteUnityLog",
