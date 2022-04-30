@@ -312,6 +312,8 @@ internal static class ProxyAssemblyGenerator
                 Cpp2IlApi.InitializeLibCpp2Il(GameAssemblyPath, metadataPath, cpp2IlUnityVersion, false);
 
                 sourceAssemblies = Cpp2IlApi.MakeDummyDLLs();
+
+                Cpp2IlApi.DisposeAndCleanupAll();
             }
 
             stopwatch.Stop();
